@@ -14,39 +14,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-light">
     <header>
-        <div class="container">
-            <div class="header">
-                <h1>Iwata Shori</h1>
-                <div class="header_menu">
+        <div class="container bg-light">
+            <div class="header row">
+                <h1 class="col-md-6">Iwata Shori</h1>
+                <div class="header_menu col-md-6">
                     <nav>
-                        <ul>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#service">Service</a></li>
-                            <li><a href="#works">Works</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                        <ul class="row">
+                            <li col-3><a href="#about">About</a></li>
+                            <li col-3><a href="#service">Service</a></li>
+                            <li col-3><a href="#works">Works</a></li>
+                            <li col-3><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
-
     </header>
 
     <main>
-        <div class="container">
+        <div class="container bg-white">
             <section id="about">
                 <h2 class="title">About</h2>
-                <div class="about_area">
-                    <div class="about_area-img">
+                <div class="about_area row">
+                    <div class="about_area-img col-md-6">
                         <img src="https://picsum.photos/800/800" alt="">
                     </div>
-                    <div class="about_area-description">
+                    <div class="about_area-description col-md-6">
                         <div class="about_area-description-text text">
                             テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                         </div>
-                        <div class="about_area-description-icon">
+                        <div class="about_area-description-icon row">
                             <a href="twitter">
                                 <i class="fab fa-twitter"></i>
                             </a>
@@ -122,51 +121,51 @@
 
             <section id="contact">
                 <h2 class="title">Contact</h2>
+                <div class="form col-lg-6 offset-lg-3 col-12 mb-5">
+                    <!-- class, action, methodを変更しないでください -->
+                    <form class="formrun" action="https://form.run/api/v1/r/c6e93uri5jrg7xwwmnz3lu16" method="post">
+                        <!-- ↓自由に要素を追加・編集することができます -->
+                        <div class="formcontent">
+                            <label>お名前</label>
+                            <input name="お名前" type="text">
+                        </div>
+    
+                        <div class="formcontent">
+                            <label>メールアドレス [必須]</label>
+                            <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
+                            <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+                        </div>
+    
+                        <div class="formcontent">
+                            <label>お問い合わせ [必須]</label>
+                            <textarea rows=10 name="お問い合わせ" data-formrun-required ></textarea>
+                            <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
+                        </div>
+    
+                        <!-- ボット投稿をブロックするためのタグ -->
+                        <div class="_formrun_gotcha">
+                            <style media="screen">
+                                ._formrun_gotcha {
+                                    position: absolute !important;
+                                    height: 1px;
+                                    width: 1px;
+                                    overflow: hidden;
+                                }
+                            </style>
+                            <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+                            <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+                        </div>
+    
+                        <button type="submit" data-formrun-error-text="未入力の項目があります"
+                            data-formrun-submitting-text="送信中...">送信</button>
+                    </form>
+                </div>
             </section>
-            <div class="form">
-                <!-- class, action, methodを変更しないでください -->
-                <form class="formrun" action="https://form.run/api/v1/r/c6e93uri5jrg7xwwmnz3lu16" method="post">
-                    <!-- ↓自由に要素を追加・編集することができます -->
-                    <div class="formcontent">
-                        <label>お名前</label>
-                        <input name="お名前" type="text">
-                    </div>
-
-                    <div class="formcontent">
-                        <label>メールアドレス [必須]</label>
-                        <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
-                        <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
-                    </div>
-
-                    <div class="formcontent">
-                        <label>お問い合わせ [必須]</label>
-                        <textarea rows=10 name="お問い合わせ" data-formrun-required></textarea>
-                        <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
-                    </div>
-
-                    <!-- ボット投稿をブロックするためのタグ -->
-                    <div class="_formrun_gotcha">
-                        <style media="screen">
-                            ._formrun_gotcha {
-                                position: absolute !important;
-                                height: 1px;
-                                width: 1px;
-                                overflow: hidden;
-                            }
-                        </style>
-                        <label for="_formrun_gotcha">If you are a human, ignore this field</label>
-                        <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
-                    </div>
-
-                    <button type="submit" data-formrun-error-text="未入力の項目があります"
-                        data-formrun-submitting-text="送信中...">送信</button>
-                </form>
-            </div>
         </div>
     </main>
 
-    <footer>
-        &copy; 2020 Iwata Shori
+    <footer class="text-center">
+        &copy;2020 Iwata Shori
     </footer>
 </body>
 
